@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARUN ARMY</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #e0f2fe 0%, #f3e8ff 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Top Bar Animation */
+        .top-bar {
+            background-color: #111827;
+            color: #ffffff;
+            padding: 12px 20px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            margin-bottom: 30px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .top-bar span {
+            color: #38bdf8;
+            font-weight: 700;
+        }
+
+        .open-btn {
+            background-color: #38bdf8;
+            color: #000000;
+            padding: 8px 16px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            transition: 0.3s ease;
+        }
+
+        .open-btn:hover {
+            background-color: #0ea5e9;
+            color: #ffffff;
+        }
+
+        /* Main Card */
+        .card {
+            background: #ffffff;
+            width: 100%;
+            max-width: 420px;
+            padding: 40px 25px;
+            border-radius: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Glowing Animation Container for Image */
+        .img-container {
+            position: relative;
+            width: 140px;
+            height: 140px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .img-container::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            background: conic-gradient(from 0deg, #3b82f6, #ec4899, #8b5cf6, #3b82f6);
+            animation: rotateGlow 3s linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes rotateGlow {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .profile-img {
+            position: relative;
+            width: 132px;
+            height: 132px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: #ffffff;
+            z-index: 2;
+            border: 4px solid #ffffff;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 22px;
+            font-weight: 800;
+            color: #111827;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .subscribers {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        /* Features List */
+        .features {
+            text-align: left;
+            width: 100%;
+            padding: 0 15px;
+            margin-bottom: 30px;
+        }
+
+        .features p {
+            font-size: 14px;
+            color: #374151;
+            margin-bottom: 12px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .features p span {
+            font-weight: 700;
+            color: #111827;
+        }
+
+        /* Join Button */
+        .join-btn {
+            background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
+            color: #ffffff;
+            width: 100%;
+            padding: 15px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            box-shadow: 0 10px 20px rgba(56, 189, 248, 0.4);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            margin-bottom: 20px;
+        }
+
+        .join-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 25px rgba(56, 189, 248, 0.6);
+        }
+
+        .telegram-icon {
+            font-size: 18px;
+        }
+
+        /* Footer Instruction */
+        .footer-text {
+            font-size: 12px;
+            color: #9ca3af;
+            line-height: 1.4;
+            max-width: 280px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        Opening Telegram in <span id="countdown">3</span> s
+        <a href="https://t.me/+S_-EP2gtaNsxOWY1" class="open-btn">Open now</a>
+    </div>
+
+    <!-- Main Card Box -->
+    <div class="card">
+        <!-- Animated Image Container -->
+        <div class="img-container">
+            <img src="https://d1yei2z3i6k35z.cloudfront.net/18503587/6abe6112074112.44554605_10076.png" alt="Tarun Army" class="profile-img">
+        </div>
+
+        <!-- Headline -->
+        <h1>TARUN ARMY</h1>
+        <div class="subscribers">30 830 subscribers</div>
+
+        <!-- Features -->
+        <div class="features">
+            <p>1. <span>Learn</span> & <span>Explore Trading</span></p>
+            <p>2. <span>Real</span>, <span>Trusted</span> & <span>Genuine Platform</span></p>
+            <p>3. <span>Interactive</span> & <span>Learning Engagement</span></p>
+        </div>
+
+        <!-- Join Button -->
+        <a href="https://t.me/+S_-EP2gtaNsxOWY1" class="join-btn">
+            <span class="telegram-icon">✈️</span> FREE JOIN CHANNEL
+        </a>
+
+        <!-- Bottom Instruction -->
+        <div class="footer-text">
+            Tap JOIN CHANNEL, then tap "Request to Join" in Telegram
+        </div>
+    </div>
+
+    <script>
+        // Simple countdown logic for top bar simulation
+        let timeLeft = 3;
+        const countdownEl = document.getElementById('countdown');
+        const timer = setInterval(() => {
+            timeLeft--;
+            if (timeLeft >= 0) {
+                countdownEl.textContent = timeLeft;
+            } else {
+                clearInterval(timer);
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>
